@@ -5,9 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test-streamable-http-client": "node scripts/test-streamable-http-client.mjs"
   },
   "dependencies": {
+    "@clerk/mcp-tools": "^0.3.1",
+    "@modelcontextprotocol/sdk": "^1.17.5",
     "mcp-handler": "^1.0.1",
     "next": "15.2.4",
     "react": "^19.1.0",

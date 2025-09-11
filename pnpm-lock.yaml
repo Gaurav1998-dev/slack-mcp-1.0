@@ -5,9 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@clerk/mcp-tools':
+    specifier: ^0.3.1
+    version: 0.3.1(redis@4.7.1)
+  '@modelcontextprotocol/sdk':
+    specifier: ^1.17.5
+    version: 1.17.5
   mcp-handler:
     specifier: ^1.0.1
-    version: 1.0.1(@modelcontextprotocol/sdk@1.17.1)(next@15.2.4)
+    version: 1.0.1(@modelcontextprotocol/sdk@1.17.5)(next@15.2.4)
   next:
     specifier: 15.2.4
     version: 15.2.4(react-dom@19.1.0)(react@19.1.0)
@@ -36,6 +42,26 @@ devDependencies:
     version: 5.8.3
 
 packages:
+
+  /@clerk/mcp-tools@0.3.1(redis@4.7.1):
+    resolution: {integrity: sha512-c/7bmT9KxA3CYVhCS08RGmVwjU8+zJ6ZCuIA5KpcJfE5xh8XLKKvZzOD4mP0GgvUGjcnT+IViaqBRlRKAyE5rw==}
+    peerDependencies:
+      better-sqlite3: ^8.7.0
+      pg: ^8.11.0
+      redis: ^4.0.0
+    peerDependenciesMeta:
+      better-sqlite3:
+        optional: true
+      pg:
+        optional: true
+      redis:
+        optional: true
+    dependencies:
+      '@modelcontextprotocol/sdk': 1.17.5
+      redis: 4.7.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /@emnapi/runtime@1.4.3:
     resolution: {integrity: sha512-pBPWdu6MLKROBX05wSNKcNb++m5Er+KQ9QkB+WVM+pW2Kx9hoSrVTnu3BdkI5eBLZoKu/J6mW/B6i6bJB2ytXQ==}
@@ -225,8 +251,8 @@ packages:
     dev: false
     optional: true
 
-  /@modelcontextprotocol/sdk@1.17.1:
-    resolution: {integrity: sha512-CPle1OQehbWqd25La9Ack5B07StKIxh4+Bf19qnpZKJC1oI22Y0czZHbifjw1UoczIfKBwBDAp/dFxvHG13B5A==}
+  /@modelcontextprotocol/sdk@1.17.5:
+    resolution: {integrity: sha512-QakrKIGniGuRVfWBdMsDea/dx1PNE739QJ7gCM41s9q+qaCYTHCdsIBXQVVXry3mfWAiaM9kT22Hyz53Uw8mfg==}
     engines: {node: '>=18'}
     dependencies:
       ajv: 6.12.6
@@ -810,7 +836,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /mcp-handler@1.0.1(@modelcontextprotocol/sdk@1.17.1)(next@15.2.4):
+  /mcp-handler@1.0.1(@modelcontextprotocol/sdk@1.17.5)(next@15.2.4):
     resolution: {integrity: sha512-a4AB6eI8XdBrL9LYS68XLflh48lJI+nNPEPVj1FMI7CXZIsj/jOx4PbCeiWqrBJf2QRoCT1rxSXI8cN4AsdS4w==}
     hasBin: true
     peerDependencies:
@@ -820,7 +846,7 @@ packages:
       next:
         optional: true
     dependencies:
-      '@modelcontextprotocol/sdk': 1.17.1
+      '@modelcontextprotocol/sdk': 1.17.5
       chalk: 5.4.1
       commander: 11.1.0
       next: 15.2.4(react-dom@19.1.0)(react@19.1.0)
