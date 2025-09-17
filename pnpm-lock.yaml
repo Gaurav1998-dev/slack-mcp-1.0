@@ -9,11 +9,11 @@ dependencies:
     specifier: ^0.3.1
     version: 0.3.1(redis@4.7.1)
   '@modelcontextprotocol/sdk':
-    specifier: ^1.17.5
-    version: 1.17.5
+    specifier: ^1.18.0
+    version: 1.18.0
   mcp-handler:
     specifier: ^1.0.1
-    version: 1.0.1(@modelcontextprotocol/sdk@1.17.5)(next@15.2.4)
+    version: 1.0.1(@modelcontextprotocol/sdk@1.18.0)(next@15.2.4)
   next:
     specifier: 15.2.4
     version: 15.2.4(react-dom@19.1.0)(react@19.1.0)
@@ -57,7 +57,7 @@ packages:
       redis:
         optional: true
     dependencies:
-      '@modelcontextprotocol/sdk': 1.17.5
+      '@modelcontextprotocol/sdk': 1.18.0
       redis: 4.7.1
     transitivePeerDependencies:
       - supports-color
@@ -251,8 +251,8 @@ packages:
     dev: false
     optional: true
 
-  /@modelcontextprotocol/sdk@1.17.5:
-    resolution: {integrity: sha512-QakrKIGniGuRVfWBdMsDea/dx1PNE739QJ7gCM41s9q+qaCYTHCdsIBXQVVXry3mfWAiaM9kT22Hyz53Uw8mfg==}
+  /@modelcontextprotocol/sdk@1.18.0:
+    resolution: {integrity: sha512-JvKyB6YwS3quM+88JPR0axeRgvdDu3Pv6mdZUy+w4qVkCzGgumb9bXG/TmtDRQv+671yaofVfXSQmFLlWU5qPQ==}
     engines: {node: '>=18'}
     dependencies:
       ajv: 6.12.6
@@ -836,7 +836,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /mcp-handler@1.0.1(@modelcontextprotocol/sdk@1.17.5)(next@15.2.4):
+  /mcp-handler@1.0.1(@modelcontextprotocol/sdk@1.18.0)(next@15.2.4):
     resolution: {integrity: sha512-a4AB6eI8XdBrL9LYS68XLflh48lJI+nNPEPVj1FMI7CXZIsj/jOx4PbCeiWqrBJf2QRoCT1rxSXI8cN4AsdS4w==}
     hasBin: true
     peerDependencies:
@@ -846,7 +846,7 @@ packages:
       next:
         optional: true
     dependencies:
-      '@modelcontextprotocol/sdk': 1.17.5
+      '@modelcontextprotocol/sdk': 1.18.0
       chalk: 5.4.1
       commander: 11.1.0
       next: 15.2.4(react-dom@19.1.0)(react@19.1.0)
